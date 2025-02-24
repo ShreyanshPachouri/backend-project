@@ -6,8 +6,6 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 //     })
 // })
 
-export {registerUser}
-
 const registerUser = asyncHandler(async (req, res) => {
     console.log("Inside registerUser controller");
     console.log("Request body:", req.body); // Log request data
@@ -16,3 +14,5 @@ const registerUser = asyncHandler(async (req, res) => {
         message: "ok"
     });
 });
+
+export {registerUser}
